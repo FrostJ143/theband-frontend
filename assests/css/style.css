@@ -48,6 +48,20 @@ html {
     margin-top: 16px;
 }
 
+.btn {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 16px;
+    display: inline-block;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.pull-right {
+    float: right;
+}
+
 /* child uses float makes child becoms display: block and parent can not contain that. Use clear: both makes parent can contain child display:block */
 .row::after {
     content: "";
@@ -421,20 +435,15 @@ html {
     width: 30px;
 }
 
+.contact-info a {
+    opacity: 0.8;
+}
+
 .contact-form .form-controller {
     padding: 10px;
     width: 100%;
     border: solid 1px #ccc;
     font-size: 15px;
-}
-
-#contact-submit-btn {
-    background-color: #000;
-    color: #fff;
-    padding: 8px 16px;
-    font-size: 15px;
-    float: right;
-    border: none;
 }
 
 #contact-submit-btn:hover {
