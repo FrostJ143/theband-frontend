@@ -13,10 +13,6 @@ html {
 
 /* Common */
 
-.clear {
-    clear: both;
-}
-
 .white-text {
     color: #fff;
 }
@@ -134,7 +130,6 @@ html {
     padding: 0 24px;
     display: block;
 }
-
 .subnav li:hover a,
 #nav > li:hover > a {
     color: #000;
@@ -155,9 +150,15 @@ html {
     font-size: 12px;
 }
 
+#header .menu-mobile,
 #header .search-btn {
     float: right;
     padding: 0 21px;
+}
+
+#header .menu-mobile:hover {
+    background-color: #ccc;
+    color: #000;
 }
 
 #header .search-btn:hover {
@@ -165,6 +166,7 @@ html {
     background-color: #f44336 !important;
 }
 
+#header .menu-mobile,
 #header .search-icon {
     color: #fff;
     font-size: 20px;
@@ -173,6 +175,7 @@ html {
 
 #content .content-section {
     width: 800px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 64px 16px;
@@ -203,11 +206,6 @@ html {
 #content .members-list {
     margin-top: 48px;
     padding-bottom: 32px;
-}
-
-#content .member-item {
-    float: left;
-    width: calc(100% / 3);
     text-align: center;
 }
 
